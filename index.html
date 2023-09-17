@@ -1,0 +1,77 @@
+<!DOCTYPE thml>
+<thml lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta thtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" class="display" data-password-display>
+
+            <button data-copy>
+                <span data-copymsg></span>
+                <img src="copy.svg" alt="copy" width="23" heigth="23">
+            </button>
+
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+
+                <h2>password length</h2>
+                <p data-lengthnumber>0</p>
+
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthslider>
+
+            <div>
+
+                <input type="checkbox" id="upppercase">
+                <label for="uppercase">Includes uppercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lowercase letters</label>
+            </div>
+          
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Includes number</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Includes symbol</label>
+            </div>
+
+            <div class="strength-container">
+
+                <p>Strength</p>
+
+                <p data-indicator></p>
+            </div>
+
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</thml>
